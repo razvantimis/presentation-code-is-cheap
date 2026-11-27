@@ -1,0 +1,37 @@
+<section id="git">
+<svg class="abs in" style="left:128px;top:360px;--i:0" width="1664" height="480" viewBox="0 0 1664 480" aria-label="A git graph: a branch with a commit per green step, one lost step when a session crashes, then merged to main">
+<line x1="0" y1="410" x2="1664" y2="410" stroke="#15171E" stroke-width="6"/>
+<path d="M60 410 C160 410 160 150 260 150 L1440 150 C1540 150 1540 410 1600 410" fill="none" stroke="#8A5A00" stroke-width="6"/>
+<circle cx="60" cy="410" r="16" fill="#15171E"/>
+<circle cx="1600" cy="410" r="22" fill="#15171E" stroke="#F2C230" stroke-width="6"/>
+<circle cx="340" cy="150" r="16" fill="#8A5A00" stroke="#F5F2EA" stroke-width="4"/>
+<circle cx="520" cy="150" r="16" fill="#8A5A00" stroke="#F5F2EA" stroke-width="4"/>
+<circle cx="700" cy="150" r="16" fill="#8A5A00" stroke="#F5F2EA" stroke-width="4"/>
+<circle cx="870" cy="150" r="16" fill="#F5F2EA" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 5"/>
+<circle cx="1040" cy="150" r="16" fill="#8A5A00" stroke="#F5F2EA" stroke-width="4"/>
+<circle cx="1220" cy="150" r="16" fill="#8A5A00" stroke="#F5F2EA" stroke-width="4"/>
+<circle cx="1400" cy="150" r="16" fill="#8A5A00" stroke="#F5F2EA" stroke-width="4"/>
+</svg>
+<p class="abs clabel in" style="left:378px;top:440px;width:180px;--i:0">route</p>
+<p class="abs clabel in" style="left:558px;top:440px;width:180px;--i:0">story</p>
+<p class="abs clabel in" style="left:738px;top:440px;width:180px;--i:0">list</p>
+<p class="abs clabel-bad in" style="left:908px;top:440px;width:180px;--i:0">crash</p>
+<p class="abs clabel in" style="left:1078px;top:440px;width:180px;--i:0">list, again</p>
+<p class="abs clabel in" style="left:1258px;top:440px;width:180px;--i:0">axe fix</p>
+<p class="abs clabel in" style="left:1438px;top:440px;width:180px;--i:0">e2e</p>
+<x-icon name="Lightning" class="abs ic-crash in" style="left:974px;top:542px;--i:2"></x-icon>
+<p class="abs clabel-bad in" style="left:888px;top:598px;width:220px;--i:2">lost: one step</p>
+<p class="abs tagpill in" style="left:428px;top:552px;width:260px;--i:1">draft PR opened</p>
+<p class="abs branchname in" style="left:1128px;top:560px;width:440px;--i:0">feat/bank-list · own worktree</p>
+<p class="abs clabel in" style="left:128px;top:810px;width:200px;text-align:left;--i:0">origin/main</p>
+<p class="abs clabel in" style="left:1532px;top:810px;width:260px;text-align:right;--i:0">merged → main</p>
+<p class="eyebrow">04 · GIT KEEPS PROGRESS</p>
+<h2>Sessions die. Commits don’t.</h2>
+<div class="grow"></div>
+<div class="legend">
+<p class="it"><b>1 worktree</b> per task</p>
+<p class="it"><b>1 commit</b> per green step</p>
+<p class="it"><b>1 draft PR</b> from the first push</p>
+</div>
+<aside>Fourth: agents crash, contexts fill up, laptops sleep. So git is the save system. Every task gets its own worktree, so several agents can work on the same repo at once. Every green step is a commit, WIP commits included, and the first push opens a draft PR. See the lightning: when a session crashes, I lose one step, never the ticket. A new session picks up from the last commit.</aside>
+</section>

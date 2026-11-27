@@ -1,0 +1,28 @@
+<section id="loop" class="alt">
+<svg class="abs" style="left:996px;top:190px" width="700" height="700" viewBox="0 0 700 700" aria-label="The skills form a clockwise loop with a dot travelling around it">
+<circle cx="350" cy="350" r="330" fill="none" stroke="#8A5A00" stroke-width="5" stroke-dasharray="4 14" stroke-linecap="round"/>
+<path d="M-12 -14 L14 0 L-12 14 Z" fill="#8A5A00" transform="translate(515 64) rotate(30)"/>
+<path d="M-12 -14 L14 0 L-12 14 Z" fill="#8A5A00" transform="translate(515 636) rotate(150)"/>
+<path d="M-12 -14 L14 0 L-12 14 Z" fill="#8A5A00" transform="translate(185 636) rotate(210)"/>
+<path d="M-12 -14 L14 0 L-12 14 Z" fill="#8A5A00" transform="translate(20 350) rotate(270)"/>
+<path d="M-12 -14 L14 0 L-12 14 Z" fill="#8A5A00" transform="translate(185 64) rotate(330)"/>
+<circle cx="350" cy="20" r="13" fill="#8A5A00"><animateMotion path="M0 0 A330 330 0 1 1 0 660 A330 330 0 1 1 0 0" dur="8s" begin="0s" repeatCount="indefinite"/></circle>
+</svg>
+<p class="abs ringtitle" style="left:1136px;top:460px;width:420px">1 skill =<br>1 Markdown file</p>
+<p class="abs ringsub" style="left:1136px;top:576px;width:420px">loaded when its trigger matches</p>
+<div class="pill abs in" style="left:1216px;top:172px;--i:0"><p class="lbl">spec</p></div>
+<div class="pill abs in" style="left:1502px;top:337px;--i:1"><p class="lbl">tickets</p></div>
+<div class="badge abs in" style="left:1594px;top:510px;width:190px;--i:2"><x-icon name="Lock" class="badge-ic"></x-icon><p class="lbl">approval</p></div>
+<div class="pill abs in" style="left:1502px;top:667px;--i:3"><p class="lbl">implement</p></div>
+<div class="pill gate abs in" style="left:1216px;top:832px;--i:4"><p class="lbl">verify</p></div>
+<div class="pill abs in" style="left:930px;top:667px;--i:5"><p class="lbl">ship</p></div>
+<div class="pill abs in" style="left:930px;top:337px;--i:6"><p class="lbl">babysit</p></div>
+<p class="eyebrow">02 · WORKFLOW AS SKILLS</p>
+<h2 class="w760">My process lives in skills, not in my head</h2>
+<p class="lead w760">Skills say <b>when</b>. Scripts, lints and tests say <b>whether</b>.</p>
+<p class="statline w760">Fired in the last 2 weeks: scenario-test 481× · verify 372× · spec 16×</p>
+<div class="grow"></div>
+<p class="keyline w760"><b>Yellow = gates nobody skips:</b> my approval before agents fan out, verify before any “done”.</p>
+<p class="keyline w760">Everything else is à la carte. A typo fix jumps straight to implement.</p>
+<aside>Second: my workflow is a loop of skills. A skill is just a Markdown file the agent loads when its trigger matches. Spec, tickets, implement, verify, ship, then babysit the PR until it’s merged. The numbers are real, from my Claude Code sessions in the last two weeks: the testing and verify skills fire hundreds of times, spec 16 times. A skill only says when to do something. Whether the work is right is decided by scripts, lints and tests the agent runs itself. I don’t run the whole loop every time. But the two yellow gates never get skipped: my approval before agents start building, and verify before anyone says done.</aside>
+</section>

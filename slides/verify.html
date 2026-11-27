@@ -1,0 +1,25 @@
+<section id="verify" class="dark">
+<p class="eyebrow">05 · TOOLS PROVE IT</p>
+<h2>The agent checks its own work</h2>
+<p class="abs statline in" style="left:128px;top:336px;width:1664px;--i:0">$ pnpm ready · one command, seven checks, run by the agent</p>
+<div class="chk abs in" style="left:128px;top:390px;width:216px;--i:1"><p class="cmd">routes</p><p class="what">route tree</p></div>
+<div class="chk abs in" style="left:369px;top:390px;width:216px;--i:2"><p class="cmd">vp check</p><p class="what">lint + types</p></div>
+<div class="chk abs in" style="left:610px;top:390px;width:216px;--i:3"><p class="cmd">api:check</p><p class="what">API contract</p></div>
+<div class="chk abs in" style="left:851px;top:390px;width:216px;--i:4"><p class="cmd">test</p><p class="what">unit tests</p></div>
+<div class="chk red abs in" style="left:1092px;top:390px;width:216px;--i:5"><p class="cmd">stories</p><p class="what">browser + axe</p></div>
+<div class="chk abs in" style="left:1333px;top:390px;width:216px;--i:6"><p class="cmd">build</p><p class="what">it builds</p></div>
+<div class="chk abs in" style="left:1574px;top:390px;width:216px;--i:7"><p class="cmd">budget</p><p class="what">bundle size</p></div>
+<svg class="abs in" style="left:128px;top:520px;--i:8" width="1664" height="110" viewBox="0 0 1664 110" aria-label="When a check goes red, the work goes back to the agent, not to me">
+<path d="M1072 4 C1072 70 1012 80 590 80 C168 80 108 70 108 18" fill="none" stroke="#B4441B" stroke-width="4" stroke-dasharray="10 8"/>
+<path d="M94 22 L108 0 L122 22 Z" fill="#B4441B"/>
+<circle cx="0" cy="0" r="9" fill="#B4441B"><animateMotion path="M1072 4 C1072 70 1012 80 590 80 C168 80 108 70 108 18" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></circle>
+</svg>
+<p class="abs backlbl in" style="left:276px;top:612px;width:900px;--i:8">red → the agent fixes it and reruns. I never see the red.</p>
+<div class="then abs in" style="left:128px;top:690px;width:1664px;--i:9">
+<div class="thn"><p class="tag">THEN · SCENARIO-TEST</p><p class="say">Video of a fresh agent using it</p></div>
+<div class="thn"><p class="tag">THEN · REVIEW</p><p class="say">Scored by a second agent</p></div>
+<div class="thn mine"><p class="tag">WHAT I SEE</p><p class="say">A draft PR, with the evidence</p></div>
+</div>
+<p class="abs statline in" style="left:128px;top:880px;width:1664px;--i:10">41 lint rules: 17 from anti-slop, 24 our own, like no-unconditional-skip and require-disable-reason</p>
+<aside>Fifth, and the habit that lets me step back: the agent proves its own work with tools, not with words. On Contami, one command, pnpm ready, runs seven checks: the route tree, lint and types, the API contract, unit tests, story tests in a real browser with axe, the build, and the bundle budget. When one goes red, the agent reads the output, fixes it and runs it again. I never see the red. The lint has 41 rules, 24 of them our own, and many close the shortcuts: no skipping a test, no raising a test timeout, no disabling a rule without a reason. Then a fresh agent drives the app on video, and another agent that didn’t build the screen scores the UX. What reaches me is a draft PR with the evidence. If a check can run in a CLI, the agent runs it, not me.</aside>
+</section>

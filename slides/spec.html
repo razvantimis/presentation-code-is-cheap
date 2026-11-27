@@ -1,0 +1,35 @@
+<section id="spec" class="dark">
+<div class="doc abs in" style="left:128px;top:340px;width:940px;--i:0">
+<p class="path">docs/specs/2026-11-15-bank-transaction-detail/</p>
+<h3>A page per bank transaction</h3>
+<p class="input">Input: my phone screenshot of the bank list, 390 px, dark</p>
+<div class="drow"><x-icon name="Warning" class="ic-open"></x-icon><div class="txt"><p class="q">Wide screen: list and page side by side?</p><p class="a-open">Open · recommended: A, side by side from 1024 px</p></div></div>
+<div class="drow"><x-icon name="Warning" class="ic-open"></x-icon><div class="txt"><p class="q">Can the monolith split one payment?</p><p class="a-open">Open · needs an API answer first</p></div></div>
+<div class="drow"><x-icon name="Check" class="ic-ok"></x-icon><div class="txt"><p class="q">Route: /bank/transactions/$id</p><p class="a">Decided 15 Nov · Back returns to the same filtered list</p></div></div>
+</div>
+<svg class="abs in" style="left:1068px;top:500px;--i:1" width="180" height="20" viewBox="0 0 180 20" aria-label="Work flows from the spec and stops at the lock">
+<line x1="0" y1="10" x2="170" y2="10" stroke="#F2C230" stroke-width="4" stroke-dasharray="10 8"/>
+<circle cx="0" cy="10" r="9" fill="#F2C230"><animateMotion path="M0 0 L160 0" dur="1.6s" begin="0s" repeatCount="indefinite"/></circle>
+</svg>
+<x-shape kind="ellipse" class="abs lockring in" style="left:1300px;top:340px;width:340px;height:340px;--i:1"></x-shape>
+<x-icon name="Lock" class="abs lockic in" style="left:1390px;top:430px;--i:1"></x-icon>
+<svg class="abs in" style="left:1250px;top:290px;--i:2" width="440" height="440" viewBox="0 0 440 440" aria-label="12 decisions around the lock: 4 decided, 8 open">
+<circle cx="220.0" cy="25.0" r="14" fill="#F2C230"/>
+<circle cx="317.5" cy="51.1" r="14" fill="#F2C230"/>
+<circle cx="388.9" cy="122.5" r="14" fill="#F2C230"/>
+<circle cx="415.0" cy="220.0" r="14" fill="#F2C230"/>
+<circle cx="388.9" cy="317.5" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="317.5" cy="388.9" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="220.0" cy="415.0" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="122.5" cy="388.9" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="51.1" cy="317.5" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="25.0" cy="220.0" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="51.1" cy="122.5" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+<circle cx="122.5" cy="51.1" r="14" fill="#232733" stroke="#B4441B" stroke-width="4" stroke-dasharray="5 4"/>
+</svg>
+<p class="abs bigy in" style="left:1180px;top:740px;width:580px;--i:3">8 open · 4 decided</p>
+<p class="abs sub-d in" style="left:1180px;top:822px;width:580px;--i:3">Until the 8 close, the page isn’t built. Small list fixes shipped the same day.</p>
+<p class="eyebrow">03 · DECIDE BEFORE CODE</p>
+<h2>Open decisions block code</h2>
+<aside>Third, and the most important: decide before code. A real one from Contami: I sent the agent a screenshot of the bank list on my phone and said “each transaction needs its own page”. It came back with a spec, a clickable mock at three widths, competitor research, and twelve decisions, each with options and its recommendation. Four are already decided, like the route. Eight are open, like this one: on a wide screen, list and page side by side, option A. Until those close, the page doesn’t get built. The small fixes it found along the way shipped the same day.</aside>
+</section>

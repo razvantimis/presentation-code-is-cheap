@@ -1,0 +1,28 @@
+<section id="contami" class="dark">
+<div class="xbox before abs in" style="left:128px;top:410px;width:540px;height:290px;--i:0">
+<p class="tag">BEFORE · KOTLIN MONOLITH</p>
+<p class="big">165 htmx templates</p>
+<p class="d">Thymeleaf, htmx, Alpine. No shared components, no browser tests.</p>
+</div>
+<svg class="abs in" style="left:700px;top:520px;--i:1" width="520" height="80" viewBox="0 0 520 80" aria-label="Screens move one at a time from the monolith to React">
+<line x1="0" y1="40" x2="470" y2="40" stroke="#F2C230" stroke-width="8" stroke-dasharray="16 12"/>
+<path d="M466 8 L520 40 L466 72 Z" fill="#F2C230"/>
+<rect x="0" y="22" width="36" height="36" rx="6" fill="#F5F2EA"><animateMotion path="M0 0 L420 0" dur="2.6s" begin="0s" repeatCount="indefinite"/></rect>
+</svg>
+<p class="abs route" style="left:680px;top:462px;width:560px">the proxy routes one path at a time</p>
+<p class="abs route-sub" style="left:680px;top:620px;width:560px">no URL changes · each move reversible</p>
+<div class="xbox after abs in" style="left:1252px;top:410px;width:540px;height:290px;--i:2">
+<p class="tag">AFTER · CONTAMI-WEB</p>
+<p class="big">React screens</p>
+<p class="d">Vite+, shadcn on Base UI, a typed OpenAPI client, Storybook tests.</p>
+</div>
+<p class="eyebrow">THE EXAMPLE · CONTAMI, MY SAAS</p>
+<h2>Rewrite every htmx screen in React, without breaking a URL</h2>
+<div class="grow"></div>
+<div class="facts">
+<div class="fact in" style="--i:3"><p class="k">GOAL</p><p class="v">Every screen moves to React. The old UI gets deleted.</p></div>
+<div class="fact in" style="--i:4"><p class="k">DONE MEANS</p><p class="v">Story tests green, axe 0 violations, 4 sizes in light and dark.</p></div>
+<div class="fact in" style="--i:5"><p class="k">SO FAR</p><p class="v">1,041 PRs merged in the last 2 weeks. Removing the old UI has started.</p></div>
+</div>
+<aside>Here’s the example I’ll use for the rest of the talk, because it’s real. Contami is my SaaS for Romanian accounting. Its UI was 165 server-rendered templates with htmx and Alpine. On 31 October I decided to move it to React, one screen at a time: the proxy sends a path to the new app when its screen is ready, so no URL changes and every step can be rolled back. The goal is clear, and so is “done”: story tests in a real browser, zero axe violations, every size in light and dark. In the last two weeks alone, agents merged over a thousand PRs into the new repo, and we’ve started deleting the old UI.</aside>
+</section>
