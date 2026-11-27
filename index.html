@@ -73,7 +73,7 @@ addEventListener('keydown', event => {
   event.preventDefault();
 });
 addEventListener('click', event => {
-  if (event.target.closest('#notes')) return;
+  if (event.target.closest('a, #notes')) return;
   show(current + (event.clientX > innerWidth / 2 ? 1 : -1));
 });
 let touchX = null;
