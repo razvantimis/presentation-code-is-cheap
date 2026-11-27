@@ -12,22 +12,22 @@
 <circle cx="0" cy="237" r="9" fill="#8A5A00"><animateMotion path="M0 0 C230 0 230 303 460 303" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
 </svg>
 <div class="code abs in" style="left:128px;top:360px;width:772px;--i:0">
-<p class="c">~/dotagents/AGENTS.md</p>
+<p class="c">~/dotagents/AGENTS.md · global</p>
+<p class="dim">## Who you are</p>
+<p class="ln">You’re Fred, my best colleague.</p>
+<p class="dim">## Who I am</p>
+<p class="ln">Senior full-stack. Skip the basics.</p>
 <p class="dim">## How to work</p>
 <p class="c">- A question is not a change request.</p>
-<p class="dim">- Prefer small, reviewable changes.</p>
-<p class="dim">- Never estimate work in human time.</p>
 <p class="c">- Code is cheap, design is not.</p>
-<p class="dim">- No dead code, no TODO litter.</p>
-<p class="dim">- Run tests before claiming done.</p>
 </div>
-<p class="abs caption" style="left:128px;top:866px;width:772px">One repo in git. install.sh links the rules and skills into each agent.</p>
+<p class="abs caption" style="left:128px;top:866px;width:772px">Mine, not a project’s: it lives in my home folder and loads in every repo. A repo’s own AGENTS.md stacks on top.</p>
 <div class="chip abs in" style="left:1360px;top:380px;width:432px;--i:1"><div class="dot"></div><p class="lbl">Claude Code</p><p class="how">@import</p></div>
 <div class="chip abs in" style="left:1360px;top:500px;width:432px;--i:2"><div class="dot"></div><p class="lbl">Codex</p><p class="how">symlink</p></div>
 <div class="chip abs in" style="left:1360px;top:620px;width:432px;--i:3"><div class="dot"></div><p class="lbl">opencode</p><p class="how">symlink</p></div>
 <div class="chip abs in" style="left:1360px;top:740px;width:432px;--i:4"><div class="dot"></div><p class="lbl">Cursor</p><p class="how">skills</p></div>
 <div class="chip abs in" style="left:1360px;top:860px;width:432px;--i:5"><div class="dot"></div><p class="lbl">Gemini CLI</p><p class="how">skills</p></div>
-<p class="eyebrow">01 · ONE BRAIN, EVERY AGENT</p>
-<h2>One AGENTS.md, shared by every tool</h2>
-<aside>The first thing: one instructions file. Mine is AGENTS.md in a repo called dotagents. It says who I am, how I like code, and what done means. An install script wires it into every agent I use: Codex and opencode get a symlink, Claude Code imports it, and the rest get the skills. So switching tools doesn’t reset my standards. My favourite rule: a question is not a change request. If I ask “why is this slow?”, I want an answer, not a 400-line diff.</aside>
+<p class="eyebrow">01 · ONE BRAIN, EVERY AGENT, EVERY REPO</p>
+<h2>My own AGENTS.md, in every tool</h2>
+<aside>The first thing: one global instructions file. Not a project’s AGENTS.md, mine. It lives in my home folder, in a git repo called dotagents, and loads in every project I open. It says who the agent is: Fred, my best colleague, who pushes back when I’m wrong. It says who I am, so it skips the basics. And it says how I like code and what done means. A repo can add its own AGENTS.md on top, and the repo wins on conflicts. An install script wires it into every agent I use: Codex and opencode get a symlink, Claude Code imports it, and the rest get the skills. So switching tools doesn’t reset my standards. My favourite rule: a question is not a change request. If I ask “why is this slow?”, I want an answer, not a 400-line diff.</aside>
 </section>
